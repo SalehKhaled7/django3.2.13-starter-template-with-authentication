@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+حدث خطأ ما -  كافو التعليمية
+{% endblock title %}
+{% block content %}
+
+
+<section>
+	
+	<!-- Page main content START -->
+	<div class="page-content-wrapper ">
+		<!-- Main card START -->
+    <div class="row">
+			<div class="col-12 text-center">
+				<!-- Image -->
+				
+				<img src="{% static 'assets/images/element/error404-01.svg' %}" class="h-200px h-md-400px mb-4" alt="">
+				
+				
+				<!-- Title -->
+				<h1 class="display-1 text-danger mb-0">404</h1>
+				<!-- Subtitle -->
+				<h2>حصل خطأ ما !</h2>
+				<!-- info -->
+				<p class="mb-4">الصفحة التي طلبتومها غير موجودة او تم حذفها</p>
+				<!-- Button -->
+				<a href="{% url 'index' %}" class="btn btn-primary mb-0">عودة للصفحة الرئيسية</a>
+			</div>
+		</div>
+		<!-- Main card END -->
+	</div>
+	<!-- Page main content END -->
+
+</section>
+
+{% endblock content%}
